@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Form</title>
+        </head>
+        <body>
+            <h1>Registration Form</h1>
+            <form onSubmit="printFormValues()">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" onchange="printFormValues()"><br>
+
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" onchange="printFormValues()"><br>
+                
+                <label for="age">Age</label><br>
+                <input type="number" id="age" name="age" onchange="printFormValues()"><br>
+
+                <button type="submit" value="submit">Submit</button>
+            </form>
+              
+            <div id="formValues"></div>
+            
+            <script>
+               function printFormValues() {
+            
+                     const name = document.getElementById('fname').value;
+                     console.log("name",name)
+                   }
+             </script>
+            </body>
+  
+</html>
